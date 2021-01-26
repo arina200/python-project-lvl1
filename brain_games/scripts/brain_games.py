@@ -1,7 +1,10 @@
 #!/usr/bin/env python
-def welcome():
+import prompt
+def user_welcome():
 	print("Welcome to the Brain Games!")
+	name = prompt.string('May I have your name? ')
+	print('Hello' + ', ' + name + '!')
 def main():
-	welcome()
+	user_welcome()
 if __name__ == '__main__':
     main()
