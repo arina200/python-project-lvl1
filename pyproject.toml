@@ -6,15 +6,12 @@ authors = ["Arina Karpova"]
 packages = [
   { include = "brain_games" },
 ]
-
 [tool.poetry.dependencies]
 python = "^3.9"
-
+[tool.poetry.scripts]
+brain-games = "brain_games.scripts.brain_games:main"
 [tool.poetry.dev-dependencies]
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
-
-[tool.poetry.scripts]
-brain-games = "brain_games.scripts.brain_games:main"
